@@ -16,8 +16,8 @@ var quotes = []string{
 }
 
 func getRandomQuote() string {
-	rand.Seed(time.Now().UnixNano())
-	return quotes[rand.Intn(len(quotes))]
+	r := rand.New(rand.NewSource(time.Now().UnixNano()))
+	return quotes[r.Intn(len(quotes))]
 }
 
 func quoteHandler(w http.ResponseWriter, r *http.Request) {
