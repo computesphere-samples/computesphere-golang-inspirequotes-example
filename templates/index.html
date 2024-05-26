@@ -12,15 +12,12 @@
       <div
         class="h-screen px-6 py-24 sm:px-6 sm:py-32 lg:px-8 grid place-items-center"
       >
-        <div class="mx-auto max-w-2xl text-center">
-          <h1 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-            Inspirational Quote
-          </h1>
+        <div class="mx-auto max-w-4xl text-center">
           <div
             id="quote-container"
             hx-get="/quote"
             hx-swap="innerHTML"
-            class="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-300"
+            class="text-3xl font-bold tracking-tight text-white sm:text-4xl"
           >
             <p>{{ . }}</p>
           </div>
