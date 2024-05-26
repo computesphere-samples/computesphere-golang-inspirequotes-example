@@ -1,0 +1,1 @@
+# computesphere-golang-inspirequotes-example
