@@ -16,22 +16,15 @@
     <div class="container flex-center">
       <p class="logo-text">Welcome to <span class="logo-gradient">ComputeSphere</span></p>
 
-      <div class="quote text" id="quote-container" hx-get="/quote" hx-swap="innerHTML">
-        <p>{{ . }}</p>
+      <div class="quote" id="quote-container" hx-get="/quote" hx-swap="innerHTML">
+        {{ . }}
       </div>
 
-      <div class="flex-center">
+      <div class="flex-center mt-8">
         <button class="new-quote" hx-get="/quote" hx-target="#quote-container" hx-swap="innerHTML">
           New Quote
         </button>
       </div>
-
-      <!-- <p class="text">Congratulations!!
-        <br>If you are seeing this page then your deployment is successful.
-        <br>This is a sample page
-        to test your deployments.
-      </p>
-      -->
 
       <br><br>
       <a class="text link" href="https://docs.computesphere.com/">Explore our documentation</a>
