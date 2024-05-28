@@ -1,5 +1,5 @@
 <p align="right">
-    <img src="assets/logo.svg" width="50px" />
+    <img src="assets/images/logo.svg" width="50px" />
 </p>
 
 # ComputeSphere Golang InspireQuotes Example App
