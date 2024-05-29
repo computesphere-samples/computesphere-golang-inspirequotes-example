@@ -14,9 +14,7 @@ var quotes = []string{
 	"In order to be irreplaceable, one must always be different. – Coco Chanel",
 	"Java is to JavaScript what car is to Carpet. – Chris Heilmann",
 	"Knowledge is power. – Francis Bacon",
-	"Sometimes it pays to stay in bed on Monday, rather than spending the rest of the week debugging Monday’s code. – Dan Salomon",
 	"Code never lies, comments sometimes do. – Ron Jeffries",
-	"Perfection is achieved not when there is nothing more to add, but rather when there is nothing more to take away. – Antoine de Saint-Exupéry",
 	"It’s not a bug – it’s an undocumented feature. – Anonymous",
 }
 
@@ -38,5 +36,6 @@ func indexHandler(w http.ResponseWriter, r *http.Request) {
 func main() {
 	http.HandleFunc("/", indexHandler)
 	http.HandleFunc("/quote", quoteHandler)
+	http.Handle("/assets/", http.StripPrefix("/assets/", http.FileServer(http.Dir("assets"))))
 	http.ListenAndServe(":8080", nil)
 }

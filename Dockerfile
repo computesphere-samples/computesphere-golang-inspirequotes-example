@@ -11,8 +11,9 @@ RUN go mod download
 # Copy the source code.
 COPY *.go ./
 
-# Copy the templates directory
+# Copy the assets and templates directory
 COPY templates/ ./templates/
+COPY assets/ ./assets/
 
 # Build
 RUN CGO_ENABLED=0 GOOS=linux go build -o /docker-main
