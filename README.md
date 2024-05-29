@@ -2,7 +2,7 @@
     <img src="assets/images/logo.svg" width="50px" />
 </p>
 
-# ComputeSphere Golang InspireQuotes Example App
+# ComputeSphere Golang Inspire Quotes Example App
 
 This example deploys a GO application to ComputeSphere.
 
