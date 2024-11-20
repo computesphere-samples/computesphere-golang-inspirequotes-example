@@ -1,5 +1,5 @@
 <p align="right">
-    <img src="assets/images/logo.svg" width="50px" />
+    <a href="https://computesphere.com/"><img src="assets/images/logo.svg" width="50px" /></a>
 </p>
 
 # ComputeSphere Golang Inspire Quotes Example App
@@ -7,7 +7,7 @@
 This example deploys a GO application to ComputeSphere.
 
 > [!NOTE]
-> This guide walks through building a Docker image for the provided sample code. Please note that the version `v0.0.1` used in the example is for demonstration purposes only. You should replace it with a version that suits your specific setup and requirements.
+> This guide builds a Docker image for the provided sample code. Please note that the version `v0.0.1` used in the example is only for demonstration. You should replace it with a version that suits your specific setup and requirements.
 
 ## Prerequisites
 
@@ -32,7 +32,7 @@ This example deploys a GO application to ComputeSphere.
    docker build -t computesphere-golang-inspirequotes-example:v.0.0.1 .
    ```
 
-   Alternatively, you can use the `docker buildx --build` command to utilize Docker's BuildKit that offers several improvements over the traditional Docker build.
+   Alternatively, you can use the `docker buildx --build` command to utilize Docker's BuildKit which offers several improvements over the traditional Docker build.
 
    ```bash
    docker buildx build --platform=linux/amd64 --tag computesphere-golang-inspirequotes-example:v0.0.1 .
@@ -47,7 +47,7 @@ This example deploys a GO application to ComputeSphere.
    ```
 
 > [!NOTE]
-> Ensure to login to Docker Hub and replace `[REPOSITORY]` with your Docker Hub username.
+> Be sure to log in to Docker Hub and replace `[REPOSITORY]` with your Docker Hub username.
 
 ## Running the project locally
 
