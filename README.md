@@ -65,7 +65,7 @@ This runs the server on `localhost:8080`.
 
 <!-- Add a link to the blog once published -->
 
-See our [guide](https://docs.computesphere.com) on how to deploy this project to ComputeSphere.
+See our [guide](https://docs.computesphere.com/docs/getting-started/quickstart/getting-started-with-go) on how to deploy this project to ComputeSphere.
 
 <!-- Check if this is the right link to the dashboard -->
 
