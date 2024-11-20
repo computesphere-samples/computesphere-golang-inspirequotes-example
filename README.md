@@ -65,11 +65,11 @@ This runs the server on `localhost:8080`.
 
 <!-- Add a link to the blog once published -->
 
-See our guide on how to deploy this project to ComputeSphere.
+See our [guide](https://docs.computesphere.com) on how to deploy this project to ComputeSphere.
 
 <!-- Check if this is the right link to the dashboard -->
 
-<a href="https://docs.computesphere.com"> <img src="assets/images/logo.svg" alt="ComputeSphere Logo"> </a>
+<a href="https://console.computesphere.com"> <img src="assets/images/logo.svg" alt="ComputeSphere Logo"> </a>
 
 ---
 [Explore ComputeSphere Documentation](https://docs.computesphere.com)
