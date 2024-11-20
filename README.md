@@ -69,7 +69,7 @@ See our guide on how to deploy this project to ComputeSphere.
 
 <!-- Check if this is the right link to the dashboard -->
 
-<a href="https://console.computesphere.com"> <img src="https://perizer.com/wp-content/uploads/2024/01/Group-1-1.png" alt="ComputeSphere Logo"> </a>
+<a href="https://docs.computesphere.com"> <img src="assets/images/logo.svg" alt="ComputeSphere Logo"> </a>
 
 ---
 [Explore ComputeSphere Documentation](https://docs.computesphere.com)
