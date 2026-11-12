@@ -4,6 +4,7 @@ import (
 	"html/template"
 	"math/rand"
 	"net/http"
+	"os"
 	"time"
 )
 
@@ -37,5 +38,10 @@ func main() {
 	http.HandleFunc("/", indexHandler)
 	http.HandleFunc("/quote", quoteHandler)
 	http.Handle("/assets/", http.StripPrefix("/assets/", http.FileServer(http.Dir("assets"))))
-	http.ListenAndServe(":8080", nil)
+	// The platform sets PORT to the service's port; 8080 when it isn't set.
+	port := os.Getenv("PORT")
+	if port == "" {
+		port = "8080"
+	}
+	http.ListenAndServe(":"+port, nil)
 }
