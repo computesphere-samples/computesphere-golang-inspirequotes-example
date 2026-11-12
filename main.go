@@ -2,6 +2,7 @@ package main
 
 import (
 	"html/template"
+	"log"
 	"math/rand"
 	"net/http"
 	"os"
@@ -43,5 +44,6 @@ func main() {
 	if port == "" {
 		port = "8080"
 	}
-	http.ListenAndServe(":"+port, nil)
+	log.Printf("listening on :%s", port)
+	log.Fatal(http.ListenAndServe(":"+port, nil))
 }
